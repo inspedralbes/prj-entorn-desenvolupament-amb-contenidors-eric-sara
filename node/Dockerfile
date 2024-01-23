@@ -21,11 +21,11 @@ COPY package*.json .
 # Install app dependencies
 RUN npm install
 
-COPY * .
+# COPY * .
 
 #expose port 8080 to the outside world
 EXPOSE 8080
 
 # Run the app when the container launches
-CMD ["node", "server.js"]
+# CMD ["node", "server.js"]
 
